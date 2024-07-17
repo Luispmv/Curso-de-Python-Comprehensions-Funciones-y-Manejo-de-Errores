@@ -1,0 +1,12 @@
+Crear un Modulo de Matemáticas en el cual tengas funciones con cada una de las operaciones básicas
+
+Crear un Modulo para Manipular Cadenas el cual tenga funciones para contar las vocales en una cadena, una función que devuelva un booleano si una cadena es un palíndromo o no y una función que invierta una cadena
+
+Crea un Modulo de conversión de unidades en este modulo habrá funciones para convertir de Celsius a Fahrenheit y visceversa, de kilómetros a millas y visceversa.
+
+Crea un Modulo enfocado en geometría el cual mediante funciones calcule el área de un circulo, el perímetro de un circulo, área de un rectángulo y el perímetro de un rectángulo.
+
+Crea un Modulo que sirva para manipular listas. Las funciones de este modulo servirán para encontrar el máximo de una lista, el mínimo, sumar la lista y promediar la lista.
+
+Crea un Modulo de calculo financiero el cual tenga funciones que hagan lo siguiente calcular el interés simple, calcular el interés compuesto y  calcular el pago mensual.
+
