@@ -1,22 +1,24 @@
 #17. Creación de graficos
 import matplotlib.pyplot as plt
 
-def graficaBarras(labels, values):
+def graficaBarras(labels, values,titulo):
 	fig, ax = plt.subplots()
 	ax.bar(labels, values)
+	ax.set_title(titulo)
 	plt.show()
 
-def graficaPastel(labels, values):
+def graficaPastel(labels, values,titulo):
 	fig, ax = plt.subplots()
 	ax.pie(values, labels=labels)
+	ax.set_title(titulo)
 	ax.axis("equal")
 	plt.show()
 
 labels = ["a","b","c"]
 values = [10,40,800]
 
-graficaBarras(labels,values)
-graficaPastel(labels,values)
+graficaBarras(labels,values,"valores")
+graficaPastel(labels,values, "valores")
 
 
 
@@ -38,11 +40,13 @@ graficoLinea(meses,ventas)
 # Grafico de Barras
 # Representa el rendimiento de diferentes equipos mediante un grafico de barras
 
+equipos = ["Real Madrid","Barcelona","Atletico de Madrid","Liverpool","Manchester United"]
+calificacion = [10,7,8,9,4]
+graficaBarras(equipos,calificacion,"Rendimiento equipos")
+
 # Grafico de Pastel
 # Crea un grafico de pastel que muestre la distribución de ventas por categoría de productos
+categoria = ["Electronico","Moda","Hogar","Panaderia","Carniceria","Comida"]
+venta = [120000,60000,45000,32000,56000,200000]
 
-# Grafico de Dispersión
-# Realiza un grafico de dispersión que muestre la relación entre el precio y la demanda de productos
-
-# Grafico de Histograma:
-# Representa la distribución de edades en una muestra de personas utilizando un histograma 
+graficaPastel(categoria, venta,"Distribucion de venta por categoria de productos")
